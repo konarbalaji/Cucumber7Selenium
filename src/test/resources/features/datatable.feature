@@ -11,6 +11,7 @@ Feature: Login Feature - Production
     And user enters "valid" password
     And user validates captcha image
     And user enters firstname and lastname
-      | Rahul | Arora |
-      | Cory  | Paul  |
+      | firstname | lastname |
+      | Rahul     | Arora    |
+      | Cory      | Paul     |
     And user clicks on signon button

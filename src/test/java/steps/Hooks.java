@@ -41,7 +41,7 @@ public class Hooks {
         System.out.println("TEARDOWN - @After hook - Quit browser1");
     }
 
-    //step level
+    /*//step level
     @BeforeStep
     public void beforeStep(){
         System.out.println("Before step - Adding a log");
@@ -51,6 +51,6 @@ public class Hooks {
     @AfterStep
     public void afterStep(){
         System.out.println("After step - deleting a log");
-    }
+    }*/
 
 }
