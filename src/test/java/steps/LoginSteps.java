@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
 
 public class LoginSteps {
 
@@ -14,17 +15,18 @@ public class LoginSteps {
     @When("user navigates the homepage title")
     public void user_navigates_the_homepage_title() {
         System.out.println("When -- user navigates the homepage title");
+//        Assert.assertTrue(false);
 
     }
 
-    @Then("user enters username")
-    public void user_enters_username() {
-        System.out.println("Then -- user enters username");
+    @Then("user enters {string} username")
+    public void user_enters_username(String uname) {
+        System.out.println("Then -- user enters "+ uname + " username");
     }
 
-    @Then("user enters password")
-    public void user_enters_password() {
-        System.out.println("Then -- user enters password");
+    @Then("user enters {string} password")
+    public void user_enters_password(String pwd) {
+        System.out.println("Then -- user enters  "+ pwd + " password");
     }
 
     @Then("user clicks on signon button")
