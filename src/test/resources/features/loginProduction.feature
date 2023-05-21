@@ -1,18 +1,20 @@
-Feature: Login Feature
+@bvt
+Feature: Login Feature - production
   In order to perform successful login
   As a user
   I have to entre correct username and password
 
-  Scenario Outline : Login to the Facebook website as a Valid user
+  Scenario Outline: Login to the Facebook website as a Valid user on production
     Given User navigates to the facebook website
     When user navigates the homepage title
     Then user enters "<username>" username
     And user enters "<password>" password
+    And user validates captcha image
     And user clicks on signon button
 
-    Examples:
-      | username | password |
-      | valid    | valid    |
-      |invalid   | invalid  |
-      | valid    | invalid  |
-      |  valid   | invalid  |
+Examples:
+  | username | password |
+  | valid    | valid    |
+  | invalid  | invalid  |
+  | valid    | invalid  |
+  | valid    | invalid  |

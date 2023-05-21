@@ -5,6 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/test/resources/features",
         glue = {"steps"},
+        tags = "@datatable",
         plugin = {"html:target/cucumber-reports/cucumber-html-report.html",
                     "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
                     }
